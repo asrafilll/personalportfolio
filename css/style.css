@@ -1,11 +1,92 @@
 :root{
-    --accent-purple: rgba(148,0,160,1);
-    --accent-blue: rgba(47,22,147,1);
+    --accent-purple: #9400A0;
+    --accent-blue: #2F1693;
+    --text: #353535;
+    --p: #747474;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
 }
 
 .gradient {
-    font-size: 72px;
-    background: -webkit-linear-gradient(30deg, var(--accent-purple) 0%, var(--accent-blue) 30%);
+    background: -webkit-linear-gradient(349deg, var(--accent-purple), var(--accent-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* Nav */
+nav {
+    height: 80px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.navbar-brand {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.nav-link {
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    background: -webkit-linear-gradient(349deg, var(--accent-purple), var(--accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Nav End */
+
+/* Hero Section */
+
+.hero-section {
+    margin-top: 50px;
+}
+
+.hero-section img {
+    width: 60%;
+}
+
+.hero-section p{
+    color: #636363;
+    font-size: 16px;
+    font-weight: 600px;
+    margin: 20px 0px 5px 0px;
+}
+
+.hero-section h4 {
+    font-weight: 600;
+    font-size: 29px;
+    margin: 0px 0px 0px 0px;
+}
+
+.hero-section h4:hover {
+    background: -webkit-linear-gradient(180deg, var(--accent-purple), var(--accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Hero Section End */
+
+/* Tech Stack */
+
+.tech-stack {
+    margin-top: 100px;
+}
+
+.tech-stack h4 {
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--text)
+}
+
+.tech-stack p {
+    color: var(--p);
+    font-weight: 200;
 }
