@@ -44,27 +44,26 @@ nav {
 
 /* Nav End */
 
-/* Hero Section */
 
-.hero-section {
-    margin-top: 50px;
+.hero-section, .tech-stack, .recent-project {
+    margin-top: 100px;
 }
 
 .hero-section img {
     width: 60%;
+    margin-bottom: 30px;
 }
 
-.hero-section p{
-    color: #636363;
+.hero-section p, .tech-stack p, .recent-project p{
+    color: var(--p);
     font-size: 16px;
     font-weight: 600px;
-    margin: 20px 0px 5px 0px;
+    margin-bottom: 5px;
 }
 
-.hero-section h4 {
+.hero-section h4, .tech-stack h4, .recent-project h4{
     font-weight: 600;
-    font-size: 29px;
-    margin: 0px 0px 0px 0px;
+    font-size: 30px;
 }
 
 .hero-section h4:hover {
@@ -74,19 +73,11 @@ nav {
 }
 /* Hero Section End */
 
-/* Tech Stack */
-
-.tech-stack {
-    margin-top: 100px;
+.tech-stack img {
+    filter: saturate(0%);
+    transition: 0.3s;
 }
 
-.tech-stack h4 {
-    font-weight: bold;
-    font-size: 32px;
-    color: var(--text)
-}
-
-.tech-stack p {
-    color: var(--p);
-    font-weight: 200;
+.tech-stack img:hover{
+    filter: saturate(100%);
 }
