@@ -1,16 +1,18 @@
-:root{
-    --accent-purple: #9400A0;
-    --accent-blue: #2F1693;
+:root {
+    --accent-purple: #9400a0;
+    --accent-blue: #2f1693;
     --text: #353535;
     --p: #747474;
 }
 
 body {
-    font-family: 'Poppins', sans-serif; 
+    font-family: "Poppins", sans-serif;
 }
 
 .gradient {
-    background: -webkit-linear-gradient(349deg, var(--accent-purple), var(--accent-blue));
+    background: -webkit-linear-gradient(349deg,
+            var(--accent-purple),
+            var(--accent-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -18,7 +20,7 @@ body {
 /* Nav */
 nav {
     height: 80px;
-    border-bottom: 1px solid #EFEFEF;
+    border-bottom: 1px solid #efefef;
 }
 
 .navbar-brand {
@@ -37,15 +39,19 @@ nav {
 }
 
 .nav-link:hover {
-    background: -webkit-linear-gradient(349deg, var(--accent-purple), var(--accent-blue));
+    background: -webkit-linear-gradient(349deg,
+            var(--accent-purple),
+            var(--accent-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 /* Nav End */
 
-
-.hero-section, .tech-stack, .recent-project {
+.hero-section,
+.tech-stack,
+.recent-project,
+.cta-modal {
     margin-top: 100px;
 }
 
@@ -54,23 +60,30 @@ nav {
     margin-bottom: 30px;
 }
 
-.hero-section p, .tech-stack p, .recent-project p{
+.hero-section p,
+.tech-stack p,
+.recent-project p {
     color: var(--p);
     font-size: 16px;
     font-weight: 600px;
     margin-bottom: 5px;
 }
 
-.hero-section h4, .tech-stack h4, .recent-project h4{
+.hero-section h4,
+.tech-stack h4,
+.recent-project h4 {
     font-weight: 600;
     font-size: 30px;
 }
 
 .hero-section h4:hover {
-    background: -webkit-linear-gradient(180deg, var(--accent-purple), var(--accent-blue));
+    background: -webkit-linear-gradient(180deg,
+            var(--accent-purple),
+            var(--accent-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 /* Hero Section End */
 
 .tech-stack img {
@@ -78,14 +91,70 @@ nav {
     transition: 0.3s;
 }
 
-.tech-stack img:hover{
+.tech-stack img:hover {
     filter: saturate(100%);
 }
 
 @media only screen and (max-width: 400px) {
-
     .hero-section h4 {
         font-size: 21px;
     }
+}
 
+.card {
+    border: 0px;
+}
+
+.card-body {
+    padding: 0px;
+    margin-top: 15px;
+}
+
+.btn-link,
+.view-project a {
+    padding: 0px;
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-link:hover,
+.view-project a:hover {
+    color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+.recent-project h6 {
+    margin-top: 60px;
+}
+
+.cta-modal .card {
+    z-index: 3;
+    background-color: #fcfcfc);
+    height: 300px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+}
+
+.cta-modal .btn {
+    padding: 15px 40px 15px 40px;
+    background-image: -webkit-linear-gradient(349deg,
+            var(--accent-purple),
+            var(--accent-blue));
+    color: #fff;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+.cta-modal .btn:hover {
+    transform: translateY(-5px);
+}
+
+.footer {
+    z-index: 1;
+    margin-top: -100px;
+    height: 400px;
+    background-image: -webkit-linear-gradient(349deg,
+            var(--accent-purple),
+            var(--accent-blue));
 }
