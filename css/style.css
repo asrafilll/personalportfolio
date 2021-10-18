@@ -153,8 +153,19 @@ nav {
 .footer {
     z-index: 1;
     margin-top: -100px;
-    height: 400px;
+    height: 300px;
     background-image: -webkit-linear-gradient(349deg,
             var(--accent-purple),
             var(--accent-blue));
+    color: #fff;
+}
+
+.footer img {
+    padding: 0px 10px 0px 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    footer .p {
+        text-align: center !important;
+    }
 }
