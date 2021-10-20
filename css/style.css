@@ -95,12 +95,6 @@ nav {
     filter: saturate(100%);
 }
 
-@media only screen and (max-width: 400px) {
-    .hero-section h4 {
-        font-size: 21px;
-    }
-}
-
 .card {
     border: 0px;
 }
@@ -130,7 +124,7 @@ nav {
 
 .cta-modal .card {
     z-index: 3;
-    background-color: #fcfcfc);
+    background-color: #fcfcfc;
     height: 300px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 40px;
@@ -164,8 +158,29 @@ nav {
     padding: 0px 10px 0px 10px;
 }
 
-@media only screen and (max-width: 900px) {
-    footer .p {
-        text-align: center !important;
+
+
+@media (max-width:500px) {
+    .cta-modal .card {
+        z-index: 3;
+        height: 300px;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 40px;
+    }
+
+    .hero-section p,
+    .tech-stack p,
+    .recent-project p {
+        color: var(--p);
+        font-size: 14px;
+        font-weight: 200px;
+        margin-bottom: 10px;
+    }
+
+    .hero-section h4,
+    .tech-stack h4,
+    .recent-project h4 {
+        font-weight: 600;
+        font-size: 28px;
     }
 }
